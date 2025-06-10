@@ -39,13 +39,13 @@ app.get('/api/murotal/kota', async (req, res) => {
         const cities = await getCities();
         res.json({
             status: 'success',
-            creator: 'AlfiDev',
+            creator: 'TofikMd',
             result: cities
         });
     } catch (error) {
         res.status(500).json({
             status: 'error',
-            creator: 'AlfiDev',
+            creator: 'TofikMd',
             message: 'Failed to fetch cities'
         });
     }
